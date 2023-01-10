@@ -1,0 +1,23 @@
+#search{
+    border: 5px solid #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#inputGroup-sizing-default{
+    border: 5px solid #000;
+    background-color: #000;
+}
+
+#cards ,#cards2,#cardM{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #000;
+
+}
+#cards2 ,#cards3,#cardes ,#modalCard{
+    color: #000;
+}
+
+

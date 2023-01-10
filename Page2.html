@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>La Baraka</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.css">
+    <link rel="stylesheet" href="vendor/air-datepicker/air-datepicker.css">
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|PT+Serif:400,400i,700">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <bodybody class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-lg-0" id="navbar">
+      <div class="container"><a class="navbar-brand" href="index.html"> <img src="img/labaraka.png" alt="Italiano" width="80"></a>
+        <button class="navbar-toggler p-0 shadow-0 border-0 text-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fw-bold mb-0 text-uppercase">Menu</span><span class="navbar-toggler-icon ms-2"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">CONTACT </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="text-white p-0" id="hero">
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-auto">
+            <div class="hero-slide bg-center bg-cover" style="background-image: url(img/hero-bg.jpg);">
+              <div class="container pe-5">
+                <h2 class="handwriting-text" data-swiper-parallax="-200">This is <span class="text-primary"> La Baraka Recepts</span></h2>
+                <h1 class="handwriting-text" data-swiper-parallax="-300">COOKING RECIPES</h1>
+                <p class="hero-text lh-2" data-swiper-parallax="-400">Here you can find a different recipes of a lot of country<a href="https://bootstraptemple.com/" target="_blank"> La Baraka Recipes
+                </a></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="hero-slide bg-center bg-cover" style="background-image: url(img/hero-bg02.jpg);">
+              <div class="container pe-5">
+                <h1 class="handwriting-text" data-swiper-parallax="-200">This is<span class="text-primary"> Baraka Recepts</span></h1>
+                <p class="hero-text lh-3" data-swiper-parallax="-400">We have delicious recipes</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto">
+            <div class="hero-slide bg-center bg-cover" style="background-image: url(img/hero-bg03.jpg);">
+              <div class="container pe-5">
+                <h2 class="handwriting-text" data-swiper-parallax="-200">Welcome to <span class="text-primary">La baraka</span></h2>
+                <h1 class="handwriting-text" data-swiper-parallax="-300">We have all what you need</h1>
+                <p class="hero-text lh-3" data-swiper-parallax="-400">The first website of recipes in the internet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider pagination-->
+        <div class="swiper-pagination p-3 text-end"></div>
+      </div><a class="scroll-down d-none d-sm-block" href="#about"></a>
+      <!-- social icons menu-->
+      <div class="hero-social d-none d-xl-flex">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a class="text-reset" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a class="text-reset" href="#!"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="text-reset" href="#!"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a class="text-reset" href="#!"><i class="fab fa-pinterest"></i></a></li>
+        </ul><span class="line"></span><span class="text-uppercase">Follow us</span>
+      </div>
+    <div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque fugiat magnam illo ullam, neque amet porro voluptas, omnis natus sint aspernatur at debitis perspiciatis ab, nihil quo explicabo nobis repudiandae.</p>
+    </div>
+    <!-- ========================================================= -->
+
+    <div class="d-flex justify-content-evenly">
+      <select class="form-select bg-secondary text-light text-center" aria-label="Default select example" id="select">
+        <option value="">Categories</option>
+        
+      </select>
+      <select class="form-select bg-secondary text-light text-center" aria-label="Default select example" id="region">
+        <option value="">Region</option>
+        
+      </select>
+      <button type="button" class="btn btn-light" onclick="dataFilter()">Search</button>
+
+
+    </div>
+    <div id="cardM" class="d-flex justify-content-center">
+
+    </div>
+    <div id="cardes">
+
+    </div>
+    <div id="modalCard">
+
+    </div>
+    <div id="cardReg" class="d-flex justify-content-center">
+
+    </div>
+    <div id="cardData" class="d-flex justify-content-center">
+
+    </div>
+
+
+    <nav aria-label="..." class="d-flex justify-content-center">
+      <ul class="pagination pagination-lg" id="lien">
+        
+      </ul>
+    </nav>
+    
+    <!-- ========================================= -->
+
+   
+
+
+    <footer class="footer text-gray-700" id="footer">
+      <div class="container">
+        <div class="row gy-4 mb-5">
+          <div class="col-md-4"><img class="mb-4" src="img/labaraka.png" alt="italiano" width="100">
+            <p class="text-sm">Here you can learn and do the last recipes so easy</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="h5 text-white text-uppercase mb-4 underline">Contact</h6>
+            <ul class="list-unstyled text-gray-700">
+              <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2 fa-fw"></i>Tanger, 23 July st, Morocco</li>
+              <li class="mb-2"><a class="text-reset" href="mailto:Italiano@Company.com"><i class="fas fa-envelope text-primary me-2 fa-fw"></i>La Baaraka@ico.com</a></li>
+              <li class="mb-2"><i class="fas fa-phone text-primary me-2 fa-fw"></i>0874635342</li>
+              <li><i class="fas fa-fax text-primary me-2 fa-fw"></i>0564738294</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="h5 text-white text-uppercase mb-4 underline">Newsletter</h6>
+            <p class="text-sm mb-3">The first website of recipes in Morocco</p>
+            <form id="subscribe">
+              <div class="input-group">
+                <input class="form-control" type="email" name="email" placeholder="Enter Your Email Address">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <ul class="social list-inline text-center mb-0 text-white">
+          <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+          <li class="list-inline-item mx-2"><a class="text-reset" href="#!" target="_blank" title="Skype"><i class="fab fa-skype"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="apps.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.js"></script>
+    <script src="vendor/air-datepicker/air-datepicker.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/theme.js"></script>
+    
+    
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </bodybody>
+</html>
