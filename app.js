@@ -1,3 +1,5 @@
+// <=============================================Random Carde====================================>
+
 var select;
 var selectTwo;
 var meals;
@@ -21,6 +23,7 @@ for (let i = 0; i < 6; i++) {
         })
 }
 
+// <=============================================Random Modal====================================>
 
 function voir(set){
     document.getElementById('cards2').innerHTML="";
@@ -89,10 +92,9 @@ function voir(set){
 
 
 
+// <=============================================Rechercher Card====================================>
 
-var i = 0;
 function recherche() {
-    i++;
     document.getElementById("cards2").innerHTML = '';
     let searchValue = document.getElementById('search').value;
     document.getElementById('cards').innerHTML = "";
@@ -236,6 +238,7 @@ function recherche() {
         });
 }
 
+// <=============================================Random modal====================================>
 
 function modalCategorie(setting) {
     document.getElementById("cards2").innerHTML ="";

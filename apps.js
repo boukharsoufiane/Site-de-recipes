@@ -1,3 +1,4 @@
+// <=============================================Random Carde====================================>
 var select;
 var selectTwo;
 var meals;
@@ -20,6 +21,8 @@ for (let i = 0; i < 6; i++) {
         $("#cardM").append(select);
         })
 }
+
+// <=============================================Random modal====================================>
 
 function voir(set){
     document.getElementById('modalCard').innerHTML="";
@@ -85,6 +88,8 @@ function voir(set){
         });
 }
 
+// <=============================================Creat option from Api====================================>
+
 fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then(response => response.json())
     .then(data => {
@@ -120,6 +125,9 @@ fetch('https://www.themealdb.com/api/json/v1/1/list.php?a=list')
 
     });
 
+// <=============================================Filter by categorie====================================>
+
+
 const tableau = [];
 document.getElementById('select').onchange = function () {
     document.getElementById('cardM').innerHTML ="";
@@ -131,6 +139,9 @@ document.getElementById('select').onchange = function () {
         .then(data => {
             const filterCategorie = data.meals;
             tableau.push(filterCategorie);
+
+                        // <=============================================pagination====================================>
+
 
             const page1 = filterCategorie.slice(0, 12); 
             const page2 = filterCategorie.slice(12, 24); 
@@ -365,6 +376,9 @@ function modalCategorie(setting) {
             }
         });
 }
+
+// <=============================================Filter by region====================================>
+
 const tableauReg =[];
 document.getElementById('region').onchange = function () {
     document.getElementById('cardM').innerHTML = "";
@@ -377,6 +391,9 @@ document.getElementById('region').onchange = function () {
         .then(data => {
             const filterRegion = data.meals;
             tableauReg.push(filterRegion);
+
+            // <=============================================pagination====================================>
+
 
             const page6 = filterRegion.slice(0, 12); 
             const page7 = filterRegion.slice(12, 24); 
@@ -551,6 +568,7 @@ document.getElementById('region').onchange = function () {
 }
 
 
+// <=============================================Filter by Categorie && region ====================================>
 
 
 function dataFilter(){
